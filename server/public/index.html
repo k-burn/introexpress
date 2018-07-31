@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Employee Salary Spreadsheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+    <script src="vendors/jquery-3.3.1.min.js"></script>
+    <script src="scripts/client.js"></script>
+</head>
+<body>
+    <div id="header" class="container">
+        <header>
+            <h1>Employee Salary Spreadsheet</h1>
+        </header>
+    </div>
+    <div id="addEmployee" class="container">
+        <h4>Add Employee</h4>
+        <input type="text" id="fNameInput" placeholder="First Name">
+        <input type="text" id="lNameInput" placeholder="Last Name">
+        <input type="text" id="employeeNumberInput" placeholder="Employee ID Number">
+        <input type="text" id="jobTitleInput" placeholder="Job Title">
+        <input type="text" id="salaryInput" placeholder="Salary">
+        <button id="submitButton" type="button">Submit Info</button>
+    </div>
+    <div id="findEmployee" class="container">
+        <h4>Find Employee</h4>
+        <input type="text" id="employeeFind" placeholder="Employee ID Number">
+        <button id="findButton" type="button">Find Employee Info</button>
+        <div id="employeeInfo" class="container">
+
+        </div>
+    </div>
+    <div class="container">
+        <h3>Spreadsheet</h3>
+        <table id="employeeTable" style="width:100%">
+             <tbody id="tableBody">
+                 <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th> 
+                    <th>ID Number</th>
+                    <th>Job Title</th>
+                    <th>Salary</th>
+                    <th>  </th>
+                 </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="totalCostDiv" class="container">
+        <h4>Total Monthly Salary Expense: $0</h4>
+
+    </div>
+    
+</body>
+</html>
